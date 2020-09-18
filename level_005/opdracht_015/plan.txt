@@ -1,0 +1,39 @@
+Werkplan
+
+1. Homepage
+    - Alle onderdelen vd website verdelen in een responsive grid -- check
+    - Mooie titel maken                                          -- check
+    - Navbar mbv flexbox maken                                   -- check
+    - Foto toevoegen                                             -- check
+    - Tekst toevoegen                                            -- check
+    - copyright in de footer toevoegen                           -- check
+    - mediaquery maken zodat de site anders toont op desktop     -- check
+    * evt een logo plaatsen
+    * evt fb link plaatsen
+
+    /* wit stuk over in de footer op mobiel */
+    /* de foto en tekst komen iets breder uit dan de pagina zelf op mobiel */
+    /* nav bar wil niet helemaal links plaatsen op desktop */
+    /* wit stil over in de footer op dekstop */
+
+-- Kijken of ik paginas kan onderverdelen in de CSS file
+
+2. Fotoimpressie
+   - Alle onderdelen vd website verdelen in een responsive grid -- check
+    - Mooie titel maken                                         -- check
+    - Navbar mbv flexbox maken                                  -- check
+    - foto-impressie met grid maken                             -- check
+    - copyright in de footer toevoegen                          -- check
+    - mediaquery maken zodat de site anders toont op desktop    -- check
+    * evt youtube video embedden
+
+3. Ga op tour
+    - Alle onderdelen vd website verdelen in een responsive grid    -- check
+    - Mooie titel maken                                             -- check
+    - Navbar mbv flexbox maken                                      -- check
+    - Indien mogelijk: google maps app in de pagina, anders tekening van kaart -- check
+    - Aanmeldingsformulier voor een tour (bonus voor uitgebreid formulier)
+    - copyright in de footer toevoegen                             -- check 
+    - mediaquery maken zodat de site anders toont op desktop       -- check
+
+Bonuspunten: Google fonts, mooie kleuren, mooi design

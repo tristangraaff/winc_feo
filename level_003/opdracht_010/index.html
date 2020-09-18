@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="recept" method="POST" data-netlify="true">
+      <p>
+        <label>Naam: <input type="text" name="naam" /></label>
+      </p>
+      <p>
+        <label>E-mail: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Telefoonnummer: <input type="tel" name="telnummer" /></label>
+      </p>
+      <p>
+        <label
+          >Leeftijd: <input type="number" name="leeftijd" min="18" max="120"
+        /></label>
+      </p>
+      <p>
+        <label>Geboortedatum: <input type="date" name="geboortedatum" /></label>
+      </p>
+      <p>
+        <label>
+          Geslacht:
+          <input type="radio" name="geslacht1" value="male" />
+          <label for="geslacht1">Man</label>
+          <input type="radio" name="geslacht2" value="female" />
+          <label for="geslacht2">Vrouw</label>
+        </label>
+      </p>
+      <p>
+        <label
+          >Favoriete eten:
+          <input type="checkbox" name="favfood1" value="Frans" />
+          <label for="favfood1">Frans</label>
+          <input type="checkbox" name="favfood2" value="Italiaans" />
+          <label for="favfood2">Italiaans</label>
+          <input type="checkbox" name="favfood3" value="Spaans" />
+          <label for="favfood3">Spaans</label>
+          <input type="checkbox" name="favfood4" value="Arabisch" />
+          <label for="favfood4">Arabisch</label>
+        </label>
+      </p>
+      <p>
+        <label for="favcolor">Je favoriete kleur van je short: </label>
+        <input type="color" id="favcolor" name="favcolor" />
+      </p>
+      <p>
+        <label>Je biografie: <textarea></textarea></label>
+      </p>
+      <p>
+        <label for="bestand">Upload je beste recept: </label>
+        <input type="file" name="bestand" />
+      </p>
+      <p>
+        <label for="website">Voeg je website toe: </label>
+        <input type="url" name="website"/>
+      </p>
+      <input type="submit"/><br><br>
+      <input type="reset"/>
+    </form>
+  </body>
+</html>

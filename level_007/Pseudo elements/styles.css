@@ -1,0 +1,40 @@
+* {
+    font-family: Impact, Charcoal, sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+div {
+    background-color: #231F20;
+    padding: 13px;
+    width: 500px;
+    display: flex;
+}
+
+h1::before {
+    content: '';
+    background-color: #4A90E2;
+    width: 20px;
+    height: 25px;
+    margin-top: 7px;
+    margin-right: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+h1::after {
+    content: '';
+    background-color: #4A90E2;
+    width: 20px;
+    height: 25px;
+    margin-top: 7px;
+    margin-left: 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+h1 {
+    color: white;
+    margin: 0px;
+    text-align: center;
+    display: flex;
+}
+

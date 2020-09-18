@@ -1,0 +1,41 @@
+body {
+  background-color: #e0ffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main, nav {
+    color: darkslateblue;
+}
+
+h1 {
+  color: darkslategray;
+  font-size: 25px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+section {
+    font-size: 20px;
+}
+
+.blockquote {
+    margin: 1em 1em;
+    font-size: 17px;
+    border-left: 2px solid #999;
+    padding-left: 1em;
+    border: 1px solid grey;
+}
+
+
+.black-border {
+  border-bottom: 3px solid black;
+}
+
+.main-nav-wrapper {
+    padding: 15px;
+    border: 2px dashed black;
+}
+
+

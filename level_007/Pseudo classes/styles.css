@@ -1,0 +1,47 @@
+.one:hover {
+    color: lightblue;
+    font-weight: 800;
+}
+
+.two:active {
+    color: red;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.three:visited {
+    color: yellow;
+}
+
+.input1:focus {
+    color: green;
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    padding-left: 0px;
+    background-color: darkblue;
+}
+
+li {
+    margin-right: 10em;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+li:first-child {
+    margin-left: 0px;
+}
+
+.currentPage {
+    background-color: #778899;
+}
+
+.bluehover:hover {
+    color: lightblue; 
+}
+
+.input2:focus {
+    border: 5px solid aquamarine;
+}

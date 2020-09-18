@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1em;
+}
+
+main {
+    display: inline;
+}
+
+.visitekaartje {
+    float: left;
+    border: 2px groove honeydew;
+    border-radius: 10px;
+    height: 300px;
+    width: 500px;
+    margin: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 100px; 
+}
+
+.gridboven {
+    display: grid;
+    grid-template-columns:1fr  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.box1 > h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.box1 > h2 {
+    color: #dedede;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: 5%;
+    margin-top: 2px;
+}
+
+.box2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+div > img {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+.box3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.box3 > h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: 3%;
+}
+
+.flexonder {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    
+}
+
+.onderbox1 {
+    border: 3px solid lawngreen;
+    width: 50%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.onderbox2 {
+    border: 3px solid red;
+    width: 50%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.onderbox1, .onderbox2 > h2 {
+    text-align: center;
+}
+
+.onderbox1 > h2 {
+    color: lawngreen;
+}
+
+.onderbox2 > h2 {
+    color: red;
+}
+

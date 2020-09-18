@@ -1,0 +1,247 @@
+body {
+  height: 100vh;
+  background: #c3cfe2;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+h1 {
+  margin-left: 30px;
+}
+
+.navmainflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.grid {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.visitekaartje {
+  height: 55vh;
+  width: 45vh;
+  margin: 30px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px hidden #fff;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-box-shadow: 5px 5px 10px 5px #383838;
+          box-shadow: 5px 5px 10px 5px #383838;
+  background: #686de0;
+}
+
+.visitekaartje--desktopright {
+  margin-right: 30px;
+}
+
+.visitekaartje__boven {
+  background: #fff;
+  height: 66.666%;
+  border: 1px solid #fff;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.visitekaartje__text {
+  text-align: left;
+  margin: 10% 10% 20% 10%;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5em;
+  color: grey;
+}
+
+.visitekaartje__foto {
+  position: relative;
+  height: 0px;
+  bottom: 9vh;
+  left: 15vh;
+}
+
+.visitekaartje__fotoborder {
+  border: 5px solid #fff;
+  border-radius: 45px;
+}
+
+.visitekaartje__onder {
+  background: #686de0;
+  height: 33.333%;
+  border: 1px solid #686de0;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.visitekaartje__footertext {
+  text-align: center;
+  margin: 10% 10% 20% 10%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 2em;
+  color: #fff;
+}
+
+.greybackground {
+  position: absolute;
+  height: 55vh;
+  width: 45vh;
+  border: 1px hidden #fff;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.greybackground__button {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 10vh;
+  position: relative;
+  left: 38%;
+  bottom: 50%;
+}
+
+.greybackground:hover {
+  background: grey;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: block;
+}
+
+.greybackground:hover + .greybackground__button {
+  display: block;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav {
+  position: fixed;
+  right: -18em;
+  z-index: 1;
+}
+
+.ul {
+  margin: 0px;
+  margin-top: 25px;
+  height: 100%;
+  list-style: none;
+}
+
+.ul__navitem:hover {
+  -webkit-transform: translateX(-11em);
+          transform: translateX(-11em);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ul__navitem--blog {
+  width: 400px;
+  height: 80px;
+  background-color: #e17b77;
+}
+
+.ul__navitem--facebook {
+  width: 400px;
+  height: 80px;
+  background-color: #3b5998;
+}
+
+.ul__navitem--twitter {
+  width: 400px;
+  height: 80px;
+  background-color: #00aced;
+}
+
+.ul__navitem--github {
+  width: 400px;
+  height: 80px;
+  background-color: lightgray;
+}
+
+.ul__navitem--linkedin {
+  width: 400px;
+  height: 80px;
+  background-color: #007bb6;
+}
+
+.ul__logo {
+  height: 75px;
+  display: block;
+  margin: auto;
+  margin-left: 20px;
+}
+
+.ul__logo--github {
+  height: 60px;
+  position: relative;
+  right: 15%;
+  top: 10%;
+  margin-left: 55px;
+}
+
+.ul__link {
+  position: relative;
+  bottom: 2.5em;
+  left: 7em;
+  color: #fff;
+}
+
+.ul__link--github {
+  position: relative;
+  bottom: 1.6em;
+}
+
+@media (max-width: 1023px) {
+  .grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .visitekaartje__text {
+    font-size: 18.5px;
+    line-height: 1.5em;
+  }
+  .visitekaartje__footertext {
+    margin: 13% 10% 27% 10%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 2em;
+  }
+  .visitekaartje__fotoborder {
+    border-radius: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .visitekaartje__text {
+    font-size: 18.5px;
+    line-height: 1.5em;
+  }
+  .visitekaartje__footertext {
+    margin: 13% 10% 27% 10%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 2em;
+  }
+  .visitekaartje__fotoborder {
+    border-radius: 60px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

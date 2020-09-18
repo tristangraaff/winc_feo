@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  height: 100%;
+  font-family: "Alata", Arial, sans-serif;
+}
+
+/*HOMEPAGE*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 10% 1fr 10%;
+}
+
+header {
+  background-color: blueviolet;
+}
+
+h1 {
+  border-bottom: 3px solid black;
+  text-align: center;
+  width: 70%;
+  height: 45px;
+  margin: auto;
+  font-size: 30px;
+  padding-bottom: -20px;
+}
+
+.ondertitel {
+  text-align: center;
+  font-style: italic;
+}
+
+nav {
+  background-color: green;
+}
+
+.flexnav {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  padding-left: 9px;
+}
+
+li {
+  margin-right: 50px;
+  list-style-type: none;
+  border: 1px dashed darkgray;
+  padding: 5px;
+  height: 40%;
+}
+
+a {
+  color: darkblue;
+}
+
+main {
+  background-color: lightblue;
+}
+
+.flexmain {
+  display: flex;
+  flex-direction: column;
+}
+
+.damsko {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.maintext {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px;
+  text-align: center;
+}
+
+footer {
+  background-color: royalblue;
+}
+
+.flexcopy {
+}
+
+/*FOTOIMPRESSIE*/
+
+.damskoFOTO {
+  width: 100%;
+  height: auto;
+}
+
+/*TOURS*/
+
+.flexmainTOURS {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexcontent {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-left: 10px;
+  margin-top: 15px;
+  height: 50px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px;
+  margin-left: 10px;
+}
+
+.formTOURS {
+  height: 40%;
+  width: 10px;
+}
+
+#verzenden {
+  height: 35px;
+  margin-left: 10px;
+}
+
+#resetten {
+  height: 35px;
+  margin-left: 10px;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    text-align: left;
+    margin: 10px;
+    padding: 1px;
+    border-bottom: 3px solid black;
+    width: 10.3%;
+    height: 40px;
+    font-size: 30px;
+    padding-bottom: -20px;
+  }
+
+  .ondertitel {
+    text-align: left;
+    font-style: italic;
+    margin-left: 180px;
+  }
+
+  .flexnav {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 18px;
+  }
+
+  .flexmain {
+    flex-direction: row;
+  }
+
+  .damsko {
+    width: 50%;
+  }
+
+  .flexcopy {
+    height: 1%; /*???*/
+  }
+
+  /* FOTOIMPRESSIE */
+
+  .flexmainFOTO {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .damskoFOTO {
+    margin: 5px;
+  }
+
+  /*TOURS*/
+
+  .flexmainTOURS {
+    flex-direction: row;
+  }
+}

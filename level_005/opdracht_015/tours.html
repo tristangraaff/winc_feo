@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amsterdam City Tours</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="titlewrapper">
+          <h1 class="border">Amsterdam CityTours</h1>
+          <p class="ondertitel">Een ervaring die je bij zal blijven!</p>
+        </div>
+      </header>
+      <nav>
+        <ul class="flexnav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fotos.html">Impressie</a></li>
+          <li><a href="tours.html">Tours</a></li>
+        </ul>
+      </nav>
+      <main class="mainTOURS">
+        <div class="flexmainTOURS">
+          <div class="googlemap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11165.44133601413!2d4.890632669277114!3d52.36933983538341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c73e99f1bd%3A0xbb9fc0fc7d6bd733!2sDam%20Square!5e1!3m2!1sen!2snl!4v1597916927441!5m2!1sen!2snl"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          <div class="flexcontent">
+            <h2>Schrijf je in voor een tour!</h2>
+
+            <form name="aanmelden" method="POST" data-netlify="true">
+              <p class="formTOURS">
+                <label>Naam: <input type="text" name="naam" /></label>
+              </p>
+              <p class="formTOURS">
+                <label>Mail: <input type="email" name="email" /></label>
+              </p>
+              <p class="formTOURS">
+                <label
+                  >Telefoonnummer: <input type="tel" name="telnummer"
+                /></label>
+              </p>
+              <p class="formTOURS">
+                <label
+                  >Leeftijd:
+                  <input type="number" name="leeftijd" min="18" max="120"
+                /></label>
+              </p>
+              <p>
+                <label>Datum tour: <input type="date" name="tourdate" /></label>
+              </p>
+              <p>
+                <label
+                  >Aantal mensen:
+                  <input type="number" name="aantal" min="1" max="25"
+                /></label>
+              </p>
+              <p>
+                <label>Speciale verzoeken: <textarea></textarea></label>
+              </p>
+              <p>
+                <label for="website">Uw bedrijfspagina: </label>
+                <input type="url" name="website" />
+              </p>
+            </form>
+            <div>
+                <input id="verzenden" type="submit" /><br /><br />
+                <input id="resetten" type="reset" />
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p class="flexcopy">&copy TRISTAN GRAAFF</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+body {
+  background-color: #e0ffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  border: 3px dashed black;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 20px 15px 20px;
+  box-sizing: border-box;
+}
+
+.navcontainer {
+  padding: 0px;
+}
+
+nav {
+  padding: 5px 30px 5px 20px;
+  border: 2px dashed black;
+  width: 80%;
+  margin: 20px auto 20px auto;
+  box-sizing: border-box;
+}
+
+.navitem {
+  display: inline;
+  border: 1px outset black;
+  margin-right: 20px;
+  padding: 10px;
+} 
+
+a:hover {
+  color: red;
+}
+
+main {
+  padding: 15px 30px 15px 30px;
+  border: 2px dashed black;
+  width: 80%;
+  margin: 20px auto 20px auto;
+  box-sizing: border-box;
+}
+
+img {
+  width: 50%;
+}
+
+footer > h2{
+  margin: auto;
+  width: 80%;
+  font-size: 15px;
+}
+
+main,
+nav {
+  color: darkslateblue;
+}
+
+
+h1 {
+  color: darkslategray;
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+section {
+  font-size: 20px;
+}
+
+.blockquote {
+  margin: 1em 1em;
+  font-size: 17px;
+  border-left: 2px solid #999;
+  padding-left: 1em;
+  border: 1px solid grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+.black-border {
+  border-bottom: 3px solid black;
+}
+
+@media (max-width: 500px){
+
+  body {
+    background-color: darkslategrey;
+  }
+
+  .black-border {
+    color: white;
+    border-bottom: 3px solid white;
+    font-size: 40px;
+  }
+
+  nav ul li a {
+    color: white;
+    font-size: 20px;
+  }
+
+  main {
+    color: white;
+  }
+
+  section {
+    font-size: 25px;
+    line-height: 1.5em;
+  }
+
+  footer > h2 {
+    color: white;
+    font-size: 20px;
+  }
+}
+
