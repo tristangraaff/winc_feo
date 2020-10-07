@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="movies.js"></script>
+    <script defer src="script.js"></script>
+    <!--Let op de volgorde van deze twee scripts-->
+    <title>Filmzoeker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>WincFlix</h1>
+    </header>
+    <nav>
+      <div>
+        <input type="radio" id="newest" name="filter" value="newest" />
+        <label>Newest movies</label>
+      </div>
+      <div>
+        <input type="radio" id="avengers" name="filter" value="avengers" />
+        <label>Avengers</label>
+      </div>
+      <div>
+        <input type="radio" id="x-men" name="filter" value="x-men" />
+        <label>X-Men</label>
+      </div>
+      <div>
+        <input type="radio" id="princess" name="filter" value="princess" />
+        <label>Princess</label>
+      </div>
+      <div>
+        <input type="radio" id="batman" name="filter" value="batman" />
+        <label>Batman</label>
+      </div>
+    </nav>
+    <main>
+      <ul id="list-of-movies"></ul>
+    </main>
+  </body>
+</html>
