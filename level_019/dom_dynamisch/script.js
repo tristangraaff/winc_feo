@@ -1,34 +1,42 @@
 //Deel 1
 
-const buttons = document.querySelectorAll('.big-five-button');
+const buttons = document.querySelectorAll(".big-five-button");
 
 for (i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function (e){
-      console.log(e.target);
-      console.log(e.target.textContent);
-      const clickedAnimal = document.createTextNode(e.target.textContent);
-      const newListItem = document.createElement("li");
-      const spottedAnimals = document.getElementById("spotted-animals-list");
-      spottedAnimals.appendChild(newListItem);
-      newListItem.appendChild(clickedAnimal);
-    });
-};
+  buttons[i].addEventListener("click", function (e) {
+    console.log(e.target);
+    console.log(e.target.textContent);
+    const clickedAnimal = document.createTextNode(e.target.textContent);
+    const newListItem = document.createElement("li");
+    const spottedAnimals = document.getElementById("spotted-animals-list");
+    spottedAnimals.appendChild(newListItem);
+    newListItem.appendChild(clickedAnimal);
+  });
+}
 
 //Deel 2
 
-const removeFirstItemButton = document.getElementById("remove-first-item-button");
+const removeFirstItemButton = document.getElementById(
+  "remove-first-item-button"
+);
 const spottedAnimals = document.getElementById("spotted-animals-list");
 
-const removeFirstItem = removeFirstItemButton.addEventListener("click", function (){
+const removeFirstItem = removeFirstItemButton.addEventListener(
+  "click",
+  function () {
     spottedAnimals.removeChild(spottedAnimals.childNodes[0]);
-});
+  }
+);
 
 //Deel 3
 
 const removeAllItemsButton = document.getElementById("remove-all-button");
-const removeAllItems = removeAllItemsButton.addEventListener("click", function (){
+const removeAllItems = removeAllItemsButton.addEventListener(
+  "click",
+  function () {
     spottedAnimals.innerHTML = "";
-})
+  }
+);
 
 /*
 Minder handige manier
