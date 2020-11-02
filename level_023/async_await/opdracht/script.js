@@ -4,3 +4,4 @@ const showDataWhenReady = async function () {
 }
 
 showDataWhenReady();
+
