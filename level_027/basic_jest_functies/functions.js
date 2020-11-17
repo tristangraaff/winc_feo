@@ -16,4 +16,4 @@ const functions = {
   
   module.exports = functions;
 
-  x = 0;
+  
