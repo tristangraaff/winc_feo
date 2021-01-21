@@ -1,0 +1,101 @@
+body {
+  background-color: #282828;
+}
+
+.App {
+  text-align: center;
+}
+
+/*Form*/
+
+.song-form {
+  box-sizing: border-box;
+  width: 100%;
+  background-color:	#282828;
+  height: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 3px solid gray;
+}
+
+.input {
+  width: 15%;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 2em;
+  border-radius: 10px;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.input::placeholder {
+  color: whitesmoke;
+}
+
+.form-button {
+  width: 10%;
+  padding: 0px;
+  height: 2em;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+/*Genres*/
+
+.genre-table {
+  background-color: #282828;
+  color: whitesmoke;
+  width: 100%;
+  padding-left: 3em;
+  padding-right: 10em;
+}
+
+.song-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Songs*/
+
+.song-list {
+  background-color: #282828; 
+  display: block;
+  color: aliceblue;
+}
+
+.song-list ul {
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+
+.song-list li:nth-child(odd) {
+  background-color: black;
+}
+
+.genre-title {
+  margin-top: 0px;
+}
+
+.list-items {
+  border: 3px solid gray;
+  border-top: none;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  display: flex;
+}
+
+.list-items:first-child {
+  border: 3px solid gray;
+}
+
+.list-items table{
+  padding-left: 3em;
+  padding-right: 10em;
+}
+
+.list-items tr {
+  display: flex;
+  justify-content: space-between;
+}
